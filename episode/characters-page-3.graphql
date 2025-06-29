@@ -1,0 +1,10 @@
+# Query to fetch episode information by ID
+# This query retrieves detailed information about episode with ID 3
+query {
+  episode(id: 3) {
+    id          # Unique identifier for the episode
+    name        # Episode's title/name
+    air_date    # Date when the episode first aired
+    episode     # Episode code (e.g., "S01E03")
+  }
+}

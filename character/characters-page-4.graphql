@@ -1,0 +1,12 @@
+# Query to fetch characters from a specific page
+# This query retrieves characters from page 4 with pagination
+query {
+  characters(page: 4) {
+    results {     # Array of characters for the current page
+      id          # Unique identifier for each character
+      name        # Character's full name
+      status      # Character's current status (alive, dead, unknown)
+      image       # URL to character's image
+    }
+  }
+}
